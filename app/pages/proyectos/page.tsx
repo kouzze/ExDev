@@ -8,7 +8,7 @@ const page = () => {
       <div className=' absolute top-32 text-center items-center justify-center z-10 w-full'>
         <BannerComp />
       </div>
-      <div className='flex relative items-center justify-center h-screen w-full top-28 '>
+      <div className='flex relative items-center justify-center min-h-screen w-full top-60'>
         <CarouselComp />
       </div>
     </div>

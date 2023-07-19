@@ -3,17 +3,28 @@ import { news } from '../utils/newsInfo'
 
 const NewsComp = () => {
   return (
-    <div className="flex items-center justify-center h-screen max-w-customnews ml-customml">
-      <div className="grid grid-cols-2 gap-2">
-        {news.map((item, index) => (
-          <div key={index} className="flex flex-col justify-center items-center text-rem2 bg-white p-4 rounded-3xl shadow-xl text-center">
+    <div className="flex flex-wrap justify-center items-center h-screen">
+      <div className="flex justify-center items-center h-screen -mt-56">
+        {news.slice(0, 3).map((item, index) => (
+          <div key={index} className="w-1/3 p-4 border border-gray-300 shadow-md rounded-xl flex flex-col justify-center items-center">
             <img src={item.image} className="max-w-full h-auto" style={{ maxHeight: '200px' }} />
-            <h1 className="font-semibold text-custom-title">{item.title}</h1>
-            <p>{item.body}</p>
+            <h1 className="text-center font-semibold text-2xl">{item.title}</h1>
+            <p className="text-center">{item.body}</p>
+          </div>
+        ))}
+      </div>
+      <div className="flex justify-center items-center -mt-96">
+        {news.slice(3).map((item, index) => (
+          <div key={index} className="w-1/3 p-4 border border-gray-300 shadow-md rounded-xl flex flex-col justify-center items-center">
+            <img src={item.image} className="max-w-full h-auto" style={{ maxHeight: '200px' }} />
+            <h1 className="text-center font-semibold text-2xl">{item.title}</h1>
+            <p className="text-center">{item.body}</p>
           </div>
         ))}
       </div>
     </div>
+
+
   )
 }
 

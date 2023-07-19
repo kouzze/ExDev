@@ -5,9 +5,9 @@ const BannerComp = () => {
   return (
     <div className=''>
       <div className='flex items-center justify-center '>
-        <Image
-          src="https://res.cloudinary.com/knoxknoxcloud/image/upload/v1689112386/Proyectos%20Nico/logo-txt-negro_eqgzm8.svg"
-          alt="Imagen del banner" width={800} height={500}
+        <img
+          src="https://res.cloudinary.com/dsjsqkalp/image/upload/v1689730675/Exdev/Group_46_lqfoaq.svg"
+          alt="Imagen del banner" style={{ width: '100%', height: '25rem', objectFit: 'cover'}} 
         />
       </div>
       {/* <div >

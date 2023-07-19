@@ -23,7 +23,7 @@ export default function RootLayout({
       <body className={ssans3.className}>
         <LogoComp />
         <NavComp />
-        {children}
+        <div className='flex-grow'>{children}</div>
         <FooterComp />
       </body>
     </html>
